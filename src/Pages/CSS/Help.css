@@ -1,0 +1,57 @@
+/* Help Page Styles */
+.help-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .help-page h1 {
+    background-color: #ff7f00; /* Orange background */
+  color: #fff; /* White text for contrast */
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px 20px; /* Adds spacing inside the background */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  margin-bottom: 20px;
+  }
+  
+  .help-page p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .help-section {
+    margin-bottom: 30px;
+  }
+  
+  .help-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .help-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .help-section ul li {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .help-section ul li strong {
+    color: #ff7f00; /* Highlight question and answer */
+  }
+  
+  .help-section ul li a {
+    color: #ff7f00;
+    text-decoration: none;
+  }
+  
+  .help-section ul li a:hover {
+    text-decoration: underline;
+  }
+  

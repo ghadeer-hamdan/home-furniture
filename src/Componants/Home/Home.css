@@ -1,0 +1,67 @@
+:root {
+    --main-color: #000000;
+    --poppins-font: 'Poppins', sans-serif;
+  }
+  
+  .home {
+    max-height: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-top:2.5rem ;
+    justify-content: center;
+    justify-items: center;
+    background-color: #f5f1e5;
+  }
+
+  
+  .home-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--main-color);
+  }
+  
+  .home-text p {
+    max-width: 300px;
+    font-size: 0.94rem;
+    font-family: var(--poppins-font);
+    margin: 1rem 0 1rem;
+  }
+  
+  .home-btn {
+    max-width: 130px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 0.5rem;
+    background: #fd7120;
+    text-decoration: none;
+  }
+  
+  .home-btn:hover {
+    background: #75510d;
+  }
+  
+  .home-btn span {
+    font-family: var(--poppins-font);
+    text-transform: uppercase;
+    color: #fff;
+    align-items: center;
+  }
+  
+  .home-btn .bx {
+    font-size: 25px;
+    background: #fd712000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    transform: rotate(60deg);
+  }
+  
+  .img {
+    max-width: 95%;
+    height: 450px;
+  }
+  

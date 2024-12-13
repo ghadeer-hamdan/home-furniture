@@ -1,0 +1,133 @@
+/* Product List (Grid Layout) */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual Product Card */
+.product-card {
+  width: 300px;
+  padding:0 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space between image and text */
+ }
+
+/* Hover Effect for Product Card */
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 128, 255, 0.2); /* Soft blue tint */
+}
+
+/* Product Image */
+.product-image {
+   width: 100%;
+  height: auto; /* Make sure image height is auto for flexibility */
+  object-fit: contain; /* Ensure image fits within its container */
+    margin: 10px 20px 0 0 ;/* Adds space below the image */
+}
+.centerimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom of the card */
+  padding: 16px;
+  text-align: center;
+  justify-items: center;
+}
+/* Product Info */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom of the card */
+  padding: 16px;
+  text-align: left;
+  justify-items: last left; 
+}
+
+/* Product Name */
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #2c3e50; /* Darker color for readability */
+}
+
+/* Product Pricing */
+.product-pricing {
+  display: flex;
+  gap: 8px;
+}
+
+/* New Price Styling */
+.new-price {
+  color: #e74c3c; /* Red color for the new price */
+  font-weight: bold;
+}
+
+/* Old Price Styling */
+.old-price {
+  color: #7f8c8d;
+  text-decoration: line-through;
+  font-size: 0.7rem;
+}
+
+/* Product Rating */
+.product-rating {
+  font-size: 0.9rem;
+  color: #f1c40f;
+  margin-top: 8px;
+}
+
+/* Star Rating */
+.stars {
+  color: #f1c40f;
+}
+
+/* Review Count */
+.review-count {
+  color: #7f8c8d;
+  margin-left: 5px;
+  font-size: 0.8rem;
+}
+
+/* Discount Badge */
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(45deg, #ff5722, #e91e63); /* Gradient background */
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px; /* Rounded shape */
+  font-size: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  animation: pulse 1s infinite; /* Animated pulse effect */
+}
+
+/* Pulse Animation for Discount Badge */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%; /* Full-width for smaller screens */
+    margin: 0 auto;
+  }
+}

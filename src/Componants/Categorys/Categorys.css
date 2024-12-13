@@ -1,0 +1,123 @@
+.Categorys {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.text {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.text h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.text p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1px;
+}
+
+
+.cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  position: relative; /* Required for ::after */
+  padding-bottom: 8px; /* Spacing for the underline */
+}
+
+.cont::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%; /* Line is 25% of the container's width */
+  height: 2px; /* Line thickness */
+  background-color: #fa7f0c; /* Line color */
+}
+
+
+  
+
+.cont img{
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.cont p {
+  font-size: 14px;
+  color: #fa7f0c;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.category-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f0f0f;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #000000d5; /* Add a bottom line */
+  position: relative;
+}
+
+.category-btn i {
+  margin-left: 5px;
+  font-size: 16px;
+  transition: transform 0.3s ease; /* Smooth icon movement */
+}
+
+.category-btn:hover i {
+  font-weight: bold;
+  transform: translateX(0); /* Removes the 10px movement */
+  transform: translateX(8px); /* Moves icon 10px to the right */
+}
+
+.categoey-type {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Centers the image horizontally */
+  justify-content: center; /* Centers the image vertically */
+  background-color: #88888821;
+  padding: 20px;
+  width: 30%;
+  transition: box-shadow 0.3s ease;
+  margin-right: 20px;
+}
+
+.type img {
+  align-self: center;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1px;
+  display: block; /* Ensures image behaves predictably */
+}
+
+
+.type h2 {
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  text-transform: capitalize;
+}

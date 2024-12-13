@@ -1,0 +1,200 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the Category Page */
+.category-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+}
+
+/* Category List */
+.category-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #fff;
+    justify-content: center;
+}
+
+/* Category Card */
+.category-item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+    text-align: center;
+    background-color: #f8f8f821;
+    padding: 5px;
+    width: auto;
+    transition: box-shadow 0.3s ease;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Hover Effect for Category Card */
+.category-item-card.active {
+    border: 2px solid #ff5927;
+  }
+  
+  /* Hover Effect */
+  .category-item-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 108, 40, 0.1);
+  }
+  
+  /* Default Category Item */
+  .category-item-card h2 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+/* Category Image */
+.category-item-image {
+    align-self: center;
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+/* Centering the h2 text inside the card */
+.category-item-card h2 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px; /* Optional: Adjust if needed for spacing */
+}
+
+/* Product List (Grid Layout) */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Product Card */
+.product-item-card {
+    width: 300px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect for Product Card */
+.product-item-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 128, 255, 0.2);
+}
+
+/* Product Image */
+.product-item-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Center the Image */
+.centered-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Product Info */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    text-align: left;
+}
+
+/* Product Name */
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #2c3e50;
+}
+
+/* Product Pricing */
+.product-price {
+    display: flex;
+    gap: 8px;
+}
+
+/* New Price Styling */
+.new-product-price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Old Price Styling */
+.old-product-price {
+    color: #7f8c8d;
+    text-decoration: line-through;
+    font-size: 0.7rem;
+}
+
+/* Product Rating */
+.product-rating {
+    font-size: 0.9rem;
+    color: #f1c40f;
+    margin-top: 8px;
+}
+
+/* Discount Badge */
+.discount-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(45deg, #ff5722, #e91e63);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: pulse 1s infinite;
+}
+
+/* Pulse Animation for Discount Badge */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+

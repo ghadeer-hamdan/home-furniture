@@ -1,0 +1,97 @@
+/* Footer */
+.footer {
+  background-color: #000000; /* White background */
+  color: #ffffff; /* Slightly darker text for better readability */
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid rgba(218, 216, 216, 0.582);
+}
+
+.footer-section h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ff7f00; /* Orange links */
+  text-decoration: none;
+  font-size: 1.02rem;
+}
+
+.footer-section a:hover {
+  color: #000000; /* Black color for hover */
+}
+
+.footer .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff7f00; /* Orange background */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.footer .button:hover {
+  background-color: #e67300; /* Darker orange for hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.footer-bottom {
+  grid-column: span 4;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #e98e39; /* Darker links */
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ffffff; /* Orange color for hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  
+  .footer-bottom {
+    grid-column: span 2;
+  }
+}

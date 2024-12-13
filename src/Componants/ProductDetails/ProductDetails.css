@@ -1,0 +1,178 @@
+.product-details-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border: 1px solid #e5e5e5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left {
+  width: 45%;
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+.right {
+  width: 45%;
+  padding-left: 20px;
+  border-left: 1px solid rgb(209, 209, 209);
+}
+
+.product-info h1 ,p {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.product-info p {
+  font-size: 20px;
+}
+.product-pricing {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.new-price {
+  font-size: 22px;
+  color: #f56e15;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: #aaa;
+}
+/* Product Quantity Section */
+/* Product Quantity Section */
+.product-quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-quantity button {
+  width: 40px;  
+  margin-left: 10px;             
+  padding: 5px 0;            /* Adjust padding to maintain button size */
+  font-size: 20px;           /* Keep font size consistent */
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #000000; /* Black background */
+  border: 1px solid #ccc;    /* Light grey border */
+  border-radius: 4px;        /* Rounded corners */
+  color: #ffffff;            /* White text */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-quantity input {
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 5px;
+  border: none;
+  background-color: #fff;    /* White background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-quantity input:focus {
+  outline: none;             /* Remove default focus outline */
+  border-color: #000000;     /* Change border color to black when focused */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Prevents default spin button appearance */
+.product-quantity input::-webkit-outer-spin-button,
+.product-quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-quantity input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.total-price {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background-color: #f56e15;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+/* Floating Cart Button */
+.floating-cart-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.cart-btn {
+  background-color: #000000; /* Green color */
+  color: white;
+  font-size: 30px; /* Icon size */
+  padding: 11px;
+  border: none;
+  border-radius: 5rem; /* Circular shape */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Animation for fading in the cart button */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
